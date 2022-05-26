@@ -1,0 +1,15 @@
+{
+  "name": "bot-wpp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "env $(cat .env | grep -v ^# | xargs) nodemon src/index.js",
+    "main": "env $(cat .env | grep -v ^# | xargs) node src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15",
+    "twilio": "^3.76.1"
+  }
+}
